@@ -1,0 +1,53 @@
+=================
+Code book
+=================
+As long as the majority of variables remain the same as they are discribed in Feature Selection, it makes sence just to add new ones to that dicument.
+New names are:
+Activity -  type of activity performed by subject (from activity_labels.txt)
+Subject - number of subject (merged from subject_test.txt and subject_train.txt)
+
+=================
+Feature Selection 
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
+These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. 
+Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
+Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). 
+Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag.
+ (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+Original name		More  descriptive activity names
+tBodyAcc-XYZ		time domain signals from the body accelerometer 
+tGravityAcc-XYZ		time domain signals from the gravity accelerometer 
+tBodyAccJerk-XYZ	time domain Jerk signals from the body accelerometer 
+tBodyGyro-XYZ		time domain signals from the body gyroscope 
+tBodyGyroJerk-XYZ	time domain Jerk signals from the body gyroscope 
+tBodyAccMag		magnitude of time domain signals from the body accelerometer 
+tGravityAccMag		magnitude of time domain signals from the gravity accelerometer 
+tBodyAccJerkMag		magnitude of time domain Jerk signals from the body accelerometer 
+tBodyGyroMag		magnitude of time domain signals from the body gyroscope 
+tBodyGyroJerkMag	magnitude of time domain Jerk signals from the body gyroscope 	
+fBodyAcc-XYZ		frequency domain signals from the body accelerometer 
+fBodyAccJerk-XYZ	frequency domain Jerk signals from the body accelerometer 
+fBodyGyro-XYZ		frequency domain signals from the body gyroscope 
+fBodyAccMag		magnitude of frequency domain signals from the body accelerometer 
+fBodyAccJerkMag		magnitude of frequency domain Jerk signals from the body accelerometer 
+fBodyGyroMag		magnitude of frequency domain signals from the body gyroscope 
+fBodyGyroJerkMag	magnitude of frequency domain Jerk signals from the body gyroscope 	
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+
+
+
